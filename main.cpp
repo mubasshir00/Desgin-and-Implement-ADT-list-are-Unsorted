@@ -75,24 +75,29 @@ int main()
         cout<<"List Full"<<endl;
     else
         cout<<"List NOT Full"<<endl;
-    obj.DeleteItem(1);
+obj.DeleteItem(1);
     obj.ResetList();
-    obj.GetNextItem(b);
+
+    cout<<"After Delete 1 from list ";
     for(int i=0;i<3;i++)
     {
         obj.GetNextItem(b);
         cout<<b<<" ";
     }
     cout<<endl;
+
+
     obj.DeleteItem(6);
     obj.ResetList();
-    obj.GetNextItem(b);
+
+    cout<<"After Delete 6 from list ";
     for(int i=0;i<2;i++)
     {
         obj.GetNextItem(b);
         cout<<b<<" ";
     }
+    cout<<endl;
+
 
     return 0;
 }
-
